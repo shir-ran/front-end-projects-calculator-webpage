@@ -29,10 +29,13 @@ header{
 
 #main-header{
   border-bottom: 3px solid #a7bfbb;
+  display: inline-block;
+  width: 100%;
 }
 h1, h2{
   letter-spacing: 2px;
   word-spacing: 4px;
+  display:inline-block;
 }
 aside{
   float:left;
@@ -53,4 +56,37 @@ aside{
   margin-top:10px;
   margin-bottom:10px;
   width: 60%;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.box-input, .sm-input, .lg-input {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+.box-input {
+  width: 60%;
+  height: 150px;
+}
+.sm-input {
+  width: 20%;
+}
+.sm-input:focus, .lg-input:focus, .box-input:focus{
+  background-color:#f7eac4;
+  color: #3c57ec;
+}
+
+.lg-input  {
+  width: 30%;
+}
+article > img {
+  border-radius:100%;
+}
+
+.dropdown {
+  float: right;
+  margin: 10px 20px;
 }
